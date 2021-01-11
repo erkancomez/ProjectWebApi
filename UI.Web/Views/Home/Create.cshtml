@@ -1,0 +1,16 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form asp-action="Create" method="post" class="w-75 mx-auto my-3 p-3">
+    <div class="form-group">
+        <label>Kategori Adı: </label>
+        <input asp-for="Name" class="form-control"/>
+    </div>
+    <div asp-validation-summary="ModelOnly" class="text-danger">
+
+    </div>
+    <button type="submit" class="btn btn-sm btn-info">Kaydet</button>
+</form>
+

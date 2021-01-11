@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Upload";
+}
+
+<form asp-action="Upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit">Gönder</button>
+    <div asp-validation-summary="ModelOnly" class="text-danger">
+
+    </div>
+</form>
